@@ -75,6 +75,7 @@ namespace Polycode.NostalgicPlayer.Client.GuiPlayer.Windows.MainWindow
 			neverEndingTimer = new System.Windows.Forms.Timer(components);
 			addContextMenu = new KryptonContextMenu();
 			moduleListControl = new ModuleListControl();
+			moduleListContextMenu = new KryptonContextMenu();
 			searchPopupControl = new SearchPopupControl();
 			((System.ComponentModel.ISupportInitialize)infoGroup).BeginInit();
 			((System.ComponentModel.ISupportInitialize)infoGroup.Panel).BeginInit();
@@ -484,6 +485,11 @@ namespace Polycode.NostalgicPlayer.Client.GuiPlayer.Windows.MainWindow
 			// 
 			addContextMenu.Palette = fontPalette;
 			// 
+			// moduleListContextMenu
+			// 
+			moduleListContextMenu.ImageArea = NostalgicPlayer.Controls.Types.ImageBankArea.Main;
+			moduleListContextMenu.Name = "moduleListContextMenu";
+			// 
 			// moduleListControl
 			//
 			moduleListControl.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
@@ -590,6 +596,7 @@ namespace Polycode.NostalgicPlayer.Client.GuiPlayer.Windows.MainWindow
 		private Kit.Gui.Components.FontPalette bigFontPalette;
 		private ModuleListControl moduleListControl;
 		private SearchPopupControl searchPopupControl;
+		private KryptonContextMenu moduleListContextMenu;
 	}
 }
 
